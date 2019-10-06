@@ -195,7 +195,7 @@ A common situation might be if you decide to disable parts of the configuration 
 
 Depending on your setup, it might be necessary to disable `Auto Start` for all accessories to be available for `HomeKit`. Only those entities that are fully set up when the `HomeKit` integration is started, can be added. To start `HomeKit` when `auto_start: false`, you can call the service `homekit.start`.
 
-If you have Z-Wave entities you want to be exposed to HomeKit, then you'll need to disable auto start and then start it after the Z-Wave mesh is ready. This is because the Z-Wave entities won't be fully set up until then. This can be automated using an automation.
+If you have Z-Wave entities (and potentially MQTT entities) you want to be exposed to HomeKit, then you'll need to disable auto start and then start it after the Z-Wave mesh is ready. This is because the Z-Wave entities won't be fully set up until then. This can be automated using an automation.
 
 <div class='note'>
 
